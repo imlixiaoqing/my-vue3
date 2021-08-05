@@ -1,5 +1,7 @@
 // 该对象将会被 webpack-merge 合并入最终的 webpack 配置
 
+// process.env.VUE_APP_VERSION = require('./package.json').version
+
 module.exports = {
   // 简单的配置方式
   // configureWebpack: config => {
