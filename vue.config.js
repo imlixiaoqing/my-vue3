@@ -8,12 +8,12 @@ module.exports = {
   productionSourceMap: true, // Default: true
   css: {
     loaderOptions: {
-      css: {
-        // 这里的选项会传递给 css-loader
-      },
-      postcss: {
-        // 这里的选项会传递给 postcss-loader
-      }
+      // css: {
+      //   // 这里的选项会传递给 css-loader
+      // },
+      // postcss: {
+      //   // 这里的选项会传递给 postcss-loader
+      // }
     }
   },
   devServer: {
