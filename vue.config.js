@@ -3,6 +3,33 @@
 // process.env.VUE_APP_VERSION = require('./package.json').version
 
 module.exports = {
+  publicPath: './', // Default: '/'
+  outputDir: 'dist/my-vue3', // Default: 'dist'
+  productionSourceMap: true, // Default: true
+  css: {
+    loaderOptions: {
+      css: {
+        // 这里的选项会传递给 css-loader
+      },
+      postcss: {
+        // 这里的选项会传递给 postcss-loader
+      }
+    }
+  },
+  devServer: {
+    // proxy: 'http://localhost:4000',
+    // proxy: {
+    //   '/api': {
+    //     target: '<url>',
+    //     ws: true,
+    //     changeOrigin: true
+    //   },
+    //   '/foo': {
+    //     target: '<other_url>'
+    //   }
+    // }
+  },
+
   // 简单的配置方式
   // configureWebpack: config => {
   //   if (process.env.NODE_ENV === 'production') {
