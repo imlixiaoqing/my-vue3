@@ -2,7 +2,8 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
-    "strict": true,
+    "outDir": "dist/tsc",
+    "strict": true, // 严格模式
     "jsx": "preserve",
     "importHelpers": true,
     "moduleResolution": "node",
