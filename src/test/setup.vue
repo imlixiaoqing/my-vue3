@@ -1,27 +1,34 @@
 <template>
-<h1>{{name}}{{age}}</h1>
-<button @click="say('nihao')">say</button>
+<h1>{{name}}</h1>
+<h1>{{age}}</h1>
+<button @click="sayHello('Hello')">sayHello</button>
+<br>
+<br>
+<button @click="changeName">changeName</button>
 </template>
 
 <script lang='ts'>
-import { h } from 'vue'
+import { ref } from 'vue'
 export default {
   setup() {
-    // let name = 'lxq'
-    // let age = 18
+    let name = ref('lxq')
+    let age = 18
 
-    // function say(other:String) {
-    //   alert(other)
-    // }
+    function sayHello(other:String) {
+      alert(other)
+    }
 
-    // return {
-    //   name,
-    //   age,
-    //   say
-    // }
+    function changeName() {
+      name.value = 'lqe'
+      console.log(name)
+    }
 
-    return () => h('h1', 'hhh')
-    
+    return {
+      name,
+      age,
+      sayHello,
+      changeName
+    }
   }
 }
 </script>
