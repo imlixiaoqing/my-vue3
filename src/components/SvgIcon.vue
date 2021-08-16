@@ -7,9 +7,7 @@
 <script lang='ts'>
 export default {
   name: 'SvgIcon',
-  props: {
-    iconClass:''
-  },
+  props: ['iconClass'],
 }
 </script>
 
