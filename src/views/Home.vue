@@ -8,12 +8,17 @@
 
 <script>
 // @ is an alias to /src
+import { myMixin } from '@/mixin/mixin'
 import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'Home',
+  mixins: [myMixin],
   components: {
     HelloWorld
+  },
+  created() {
+    console.log('组件钩子被调用')
   }
 }
 </script>
