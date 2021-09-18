@@ -1,6 +1,6 @@
 export const myMixin = {
   created() {
-    console.log('mixin 对象的钩子被调用')
+    // console.log('mixin 对象的钩子被调用')
   },
   methods: {
     foo() {
